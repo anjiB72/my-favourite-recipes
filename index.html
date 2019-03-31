@@ -7,38 +7,54 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./resources/css/reset.css" type="text/css">
     <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
   </head>
   <body>
     <!-- HEADER -->
     <header>
-      <div class="flex-row">
+      <div class="header flex-row">
         <div class="brand flex-row">
           <img src="./resources/images/cooking.svg" height="66" alt="My Favourite Recipes Logo">
           <h1>My Favourite Recipes</h1>
         </div>
-        <nav class="mobile-menu flex-row">
-          <a href="Recipes"><img src="./resources/images/recipe-book.svg" alt="recipe book icon" height="66"></a>
+        <div class="flex-row menu">
+          <nav class="mobile-menu">
+            <div class="container" onclick="myFunction(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </nav>
+          <nav class="full-menu flex-row">
 
-        </nav>
-        <nav class="full-menu flex-row">
-
-        </nav>
+          </nav>
+        </div>
       </div>
     </header>
     <!-- ABOUT -->
     <div class="about">
-
-
+      <div class="about-text">
+        <h1>My Favourite Recipes</h1>
+        <h2>Search for & Add new recipes</h2>
+        <h2>Create ingredient shopping lists</h2>
+        <button type="button" name="ADD NEW RECIPE"></button>
+      </div>
     </div>
+
+
+    <!--RECIPES -->
     <div class="flex-row recipes-main" id="Recipes">
 
+
     </div>
+
+
     <!-- FOOTER-->
     <footer>
       <div class="flex-row footer">
-        <h2>&copy My Favourite Recipes</h2>
+        <p>&copy My Favourite Recipes</p>
         <div class="">
-          <h2>Design by:Angela Boakes</h2>
+          <p>Design by: Angela Boakes</p>
           <div class="">
 
           </div>
@@ -50,5 +66,7 @@
         </div>
       </div>
     </footer>
+  <link rel="script" type="text/javascript" href="./resources/js/main.js">
+
   </body>
 </html>
