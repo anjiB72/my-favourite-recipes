@@ -103,11 +103,29 @@ header{
   .full-menu{
     display: none;
   }
+  .dropdown-menu{
+    position: fixed;
+    margin-top: -1rem;
+    z-index: 1;
+    display: none;
+    width: 100%;
+    background-color: rgba(88, 46, 68, 1);
+    height: 6rem;
+    text-align: center;
+    padding-top: 1.5rem;
+  }
+  .dropdown-menu li{
+    padding-bottom: 1rem;
+  }
 }
 
 @media only screen and (min-width: 800px){
   .mobile-menu{
     display: none;
+  }
+  .dropdown-menu{
+    display: none;
+
   }
   .full-menu{
     margin-top: auto;
